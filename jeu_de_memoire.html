@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jeu de Memoire</title>
+
+	<link href='css/jeu_de_memoire.css' rel='stylesheet' type='text/css' />
+
+</head>
+
+<body>
+
+	<div class="div_conteneur_parent">
+
+		<div class="titre_page">
+			<h1>Bienvenue au Jeu du Memory </h1>
+		</div>
+
+		<div class="div_conteneur_page">
+
+			<div class="div_int_page">
+
+				<div id="divReglesJeux">
+					<h1> LES RÈGLES : </h1>
+					<p style="font-size: 2em;"> Vous avez <span style="color: cornflowerblue; font-weight: bold;">3
+							minutes(180secondes)</span> pour retrouver les <span
+							style="color:yellowgreen ; font-weight: bold;">8 paires</span> d'images identiques</p>
+					<p style="font-size: 2em;"> Cliquez sur les cases pour trouver les images correspondantes</p>
+					<p style="font-size: 2em;"> En faisant le moins de tentatives possible</p>
+					<p style="font-size: 2em;"> Et surpassez-vous-en jouant plusieurs fois pour favoriser votre mémoire
+						et ainsi obtenir le meilleur temps</p>
+					<p style="font-size: 2em;"> En commençant la partie Vous avez <span
+							style="color:rgb(165, 64, 156); font-weight: bold;">5secondes</span> pour tout mémoriser</p>
+					<p style="font-size: 3em; color: red;"> Let's Do It</p>
+
+				</div>
+
+				<div style="width:100%;height:auto;text-align:center; margin-top:50px;">
+
+					<div id="liste" class="colonne">
+
+						<div id="grille">
+
+							<div class="case" id="case0"></div>
+							<div class="case" id="case1"></div>
+							<div class="case" id="case2"></div>
+							<div class="case" id="case3"></div>
+
+							<div class="case" id="case4"></div>
+							<div class="case" id="case5"></div>
+							<div class="case" id="case6"></div>
+							<div class="case" id="case7"></div>
+
+							<div class="case" id="case8"></div>
+							<div class="case" id="case9"></div>
+							<div class="case" id="case10"></div>
+							<div class="case" id="case11"></div>
+
+							<div class="case" id="case12"></div>
+							<div class="case" id="case13"></div>
+							<div class="case" id="case14"></div>
+							<div class="case" id="case15"></div>
+
+
+						</div>
+
+						<div style=" color: white;">
+
+
+							<label> Nombres de paires trouvées </label> <br />
+							<div id="paireTrouver" style="font-size:28px; color: greenyellow;"> </div><br />
+
+							<label> Temps <span style="font-size: smaller;">(timer)</span> </label> <br>
+
+							<div id="temps" style="font-size:28px; color: cornflowerblue;"> </div><br />
+
+							<div id="tempsFinal" style="font-size:35px; color: cornflowerblue;"> </div><br />
+
+							<div id="meilleur" style="font-size:28px; color: cornflowerblue;"> </div><br />
+
+							<div id="citation" style="font-size:26px; color: cornflowerblue;"> </div><br />
+
+							<label> Score <span style="font-size: smaller;">(Nombres de tentatives)</span> </label> <br>
+
+							<div id="tentative" style="font-size:35px; color: crimson;"> </div><br />
+
+							<input id="bouton" type="button" class="btn" value="Nouvelle partie" />
+
+						</div>
+
+					</div>
+
+					<div id="nom" style="margin-left:80% ; color: rgb(231, 87, 62);">
+						<p> By Kamel and Michel </p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<script src="js/jeu_de_memoire.js"></script>
+</body>
+
+</html>
